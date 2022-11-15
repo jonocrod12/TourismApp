@@ -1,0 +1,125 @@
+@import url('../../../../variables.scss');
+
+#nav-logo {
+	max-width: 240px;
+  max-height: 125px;
+}
+
+#nav-logo-resp {
+	max-width: 80px;
+}
+
+#navMenu__icon {
+	max-width: 100px;
+}
+
+#navMenu {
+	width: 100vw;
+	height: 150vh;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.274);
+	overflow: hidden;
+	z-index: 20;
+
+	.navMenu__block {
+		width: 30vw;
+		height: 150vh;
+		padding: 40px 60px;
+		background-color: rgb(45, 45, 45);
+		color: white;
+
+		@media (max-width: 750px) {
+			width: 70vw;
+		}
+
+		@media (max-width: 450px) {
+			width: 80vw;
+		}
+
+		@media (max-width: 350px) {
+			width: 100vw;
+		}
+	}
+
+	.navMenu__title {
+		margin-bottom: 20px;
+
+	}
+
+	.navMenu__links {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		color: white;
+		margin-bottom: 20px;
+
+
+		@media (min-width: 650px) {
+			text-align: center;
+		}
+	}
+
+	.navMenu__button {
+		background-color: #0A373C;
+		color: white;
+		padding: 20px 20px;
+		text-align: center;
+		border: none;
+		border-radius: 15px;
+		font-size: 1.5em;
+
+		&:hover {
+			color: white;
+		}
+	}
+
+	.navMenu__signIn {
+		background-color: transparent;
+		padding: 20px 40px;
+		text-align: center;
+		border: 1px solid white;
+		color: white;
+		border-radius: 50px;
+		font-size: 1.5em;
+
+		&:hover {
+			color: white;
+		}
+	}
+}
+
+.nav__container {
+	background-color: transparent;
+	padding: 30px 0;
+
+	@media (min-width: 500px) {
+		padding: 50px 30px;
+	}
+}
+
+.nav__links {
+	display: flex;
+
+	a {
+		font-size: 0.9em;
+
+		&:not(:first-of-type) {
+			margin-left: 20px;
+		}
+	}
+
+	.nav__signin {
+		font-weight: 700;
+		color: #191919;
+	}
+}
+
+.active {
+	font-weight: 700;
+	color: #0A373C;
+
+	@media (min-width: 1250px) {
+		font-weight: 700;
+		color: #191919;
+	}
+}

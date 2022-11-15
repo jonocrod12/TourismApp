@@ -1,0 +1,72 @@
+<div class="signin__container">
+	<div class="bg__aside"></div>
+
+	<div class="form__aside">
+		<form [formGroup]="formLogin" autocomplete="off">
+			<div>
+				<a href="/" class="formSignin__back"
+					><span
+						><mat-icon
+							aria-hidden="false"
+							aria-label="arrow_circle_left"
+							fontIcon="arrow_circle_left"
+						></mat-icon
+					></span>
+					<span>Go Back</span></a
+				>
+			</div>
+			<div class="formSignin__title">
+				<p class="mat-display-2"><strong>Log In</strong></p>
+			</div>
+			<mat-form-field appearance="outline" class="formSignin__field">
+				<mat-label>Email</mat-label>
+				<input
+					matInput
+					placeholder="Enter your email here"
+					class="formSignin__input form-control"
+					formControlName="email"
+					autocomplete="off"
+				/>
+
+			</mat-form-field>
+			<mat-form-field appearance="outline" class="formSignin__field">
+				<mat-label>Password</mat-label>
+				<input
+					matInput
+					placeholder="Enter your password here"
+					class="formSignin__input form-control"
+					type="password"
+					formControlName="password"
+					autocomplete="off"
+          style="border: 5px;"
+				/>
+
+			</mat-form-field>
+			<div style="padding-bottom: 30px; opacity: 50%">
+				<i><small>Do not trust your credentials to enyone</small></i>
+			</div>
+			<div class="formSignin__button">
+				<button mat-raised-button color="primary" (click)="onSubmit()">
+					Sign in
+				</button>
+			</div>
+			<div class="formSignin__google">
+				<button mat-stroked-button>
+					<img src="../../../../assets/google-icon.png" alt="" />
+					Sign in with Google
+				</button>
+			</div>
+			<div style="margin: 10px 0">
+				<span>Don't have an account yet? </span>
+				<a href="/signup">Register</a>
+			</div>
+			<div class="formSignin__logo">
+				<img
+					class="img-logo"
+					src="../../../../assets/bcda8def6ad106a5caa4ead664a79707.jpg"
+					alt="logo"
+				/>
+			</div>
+		</form>
+	</div>
+</div>
