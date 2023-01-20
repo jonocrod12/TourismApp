@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: jonoocrod12/app:TurismApp
+          tags: jonoocrod12/test:latest
